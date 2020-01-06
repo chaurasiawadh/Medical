@@ -1,0 +1,45 @@
+.main {
+  margin: 10px;
+  /* background-color: green; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.scroll-bg {
+  width: 100%;
+  margin: 10px;
+}
+.carousel .slide {
+  background: transparent;
+}
+
+.scroll-div {
+  margin: 10px;
+  display: flex;
+  /* width: 100%; */
+  /* background-color: red; */
+  justify-content: center;
+  align-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  align-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+.selected {
+  /* background-color: blue; */
+}
+.scroll-img {
+  height: "20px";
+  width: "20px";
+  /* background-color: aqua; */
+}
+.scroll-head {
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.scroll-detail {
+  font-size: 14px;
+  padding: 10px;
+}

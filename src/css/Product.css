@@ -1,0 +1,57 @@
+.containerProduct {
+  /* background-color: blue; */
+  flex-direction: row;
+  display: flex;
+}
+.heeader {
+  background-color: black;
+  width: 40%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.tag-Name {
+  padding: 20px;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  text-align: center;
+}
+.left {
+  width: 35%;
+  /* background-color: red; */
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+.right {
+  flex: 1;
+  width: 65%;
+  /* background-color: green; */
+  justify-content: center;
+  align-content: center;
+}
+.deltails {
+  text-align: center;
+  padding: 20px;
+}
+.img-left {
+  width: 250px;
+  padding: 30px;
+  /* justify-self: center;
+    justify-items: center; */
+}
+.footer {
+  flex-direction: row;
+  display: flex;
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+.img-foot {
+  /* background-color: blue; */
+  width: 20%;
+  height: 20%;
+  margin: 20px;
+  padding: 50px;
+}

@@ -1,0 +1,43 @@
+.complaint-container{
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.complaint-header{
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.complaint-header-tag{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+.complaint-box{
+    margin: 20px;
+    padding:10px;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 6px;
+    background-color: #EDF9F9;
+}
+.complaint-name{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    color: black;
+    padding: 0px;
+    /* margin: ; */
+}
+.complaint-address{
+    font-size: 18px;
+    text-align: start;
+    color: black;
+    padding: 0px;
+}
+.complaint-card{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}

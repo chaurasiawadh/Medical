@@ -1,0 +1,26 @@
+.report-header{
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.report-header-tag{
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.report-btn-div{
+    justify-content: center;
+    display: flex;
+}
+.report-btn{
+    padding: 10px;
+    font-size: 16px;
+    border-color: black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 20px;
+}
+.report-body{
+    margin-top: 10px;
+}

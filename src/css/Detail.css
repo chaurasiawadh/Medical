@@ -1,0 +1,51 @@
+.header{
+    background-color: black;
+    height: 70px;
+    padding: 20px;
+    color: white;
+}
+.app {
+    text-align: center;
+  }
+.container{
+    /* background-color: rgb(113, 199, 102); */
+    flex-direction: row;
+    display: flex;
+}
+.first{
+    /* background-color: brown; */
+    width: 10%;
+}
+.second{
+    /* background-color: aqua; */
+    width: 90%;
+}
+.vl {
+    border-right: 50px solid black;
+    border-radius: 20px;
+    height: 500px;
+    padding: 20px;
+    align-self: center;
+    display: flex;
+  }
+  .secondContainer{
+      /* background-color: red; */
+      align-content: flex-start;
+      flex-direction: column;
+      display: flex;
+  }
+  .medName{
+      background-color:black;
+      padding: 14px;
+      color: aliceblue;
+      font-weight: bold;
+      width: 350px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+  .medDetail{
+      /* background-color: brown; */
+      width: 50%;
+      margin-left: 12px;
+      padding: 0;
+  }

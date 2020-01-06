@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+*:not(i) {
+  font-family: "Josefin Sans", arial;
+}
+.body-container {
+  height: 93vh;
+  background: url("../image/thermometer.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100vh;
+  min-width: 80vh;
+  font-size: 18px;
+  background-color: aliceblue;
+  opacity: 0.8;
+  border-radius: 10px;
+  color: rgb(44, 43, 43);
+  border: none;
+  padding: 10px;
+}
+.search input {
+  flex: 1;
+  background-color: aliceblue;
+  border: none;
+}
+.search input::placeholder {
+  color: #000;
+}
+.search:hover {
+  box-shadow: 0px 0px 2px 1px rgb(112, 110, 110);
+}
+
+.menu-section {
+  /* background-color: crimson; */
+  padding: 10px;
+  flex-direction: row;
+}
