@@ -1,3 +1,3 @@
 # Medical
 
-<img src=".img/home.png" />
+<img src="img/home.png" />
