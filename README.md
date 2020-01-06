@@ -1,11 +1,11 @@
 # Medical
-<h5>Home Page</h5>
+<h2>Home Page</h2>
 <img src="img/home.png" />
 
 
-<h5>Report Page</h5>
+<h2>Report Page</h2>
 <img src="img/report.png" />
 
 
-<h5>Complaint Page</h5>
+<h2>Complaint Page</h2>
 <img src="img/complaint.png" />
