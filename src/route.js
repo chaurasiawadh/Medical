@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./screen/Home";
 import Report from "./screen/report";
+// import Report from "./screen/reports/reports";
 import NavBoot from "./component/main/navBoot";
 import complaintShow from "./screen/complaint/complaintShow";
 import firebase from "firebase/app";
@@ -20,20 +21,19 @@ const firestore = firebase.firestore();
 const settings = {timestampsInSnapshots: true };
 firestore.settings(settings);
 
-
-class App extends React.Component {
+class Routes extends React.Component {
   render() {
     return (
       <div>
         <NavBoot />
         <Switch>
-          <Route path="/complaint" component={complaintShow} />
-          <Route path="/report" component={Report} />
-          <Route path="/" component={Home} />
+          <Route exact path="/complaint" component={complaintShow} />
+          <Route exact path="/report" component={Report} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default Routes;

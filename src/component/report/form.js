@@ -3,11 +3,13 @@ import Input from "./input";
 import firebase from "firebase/app";
 import "firebase/firestore";
 
+import Dialog from "./reportDialog";
+
 class Form extends React.Component {
   state = {
     data: {},
     errors: {},
-    disableBtn: false,
+    disableBtn: true,
     err:null
   };
 
@@ -31,7 +33,7 @@ class Form extends React.Component {
         timeOccur
       } = this.state.data;
 
-      event.preventDefault();
+      console.log("hhhh",  this.state.data )
       firebase
         .firestore()
         .collection("report")
@@ -74,8 +76,40 @@ class Form extends React.Component {
   };
 
 
+  
+  handleChange = ({ currentTarget: input }) => {
+    const data = { ...this.state.data };
+    if (input.name === "reactionType") {
+      data[input.name] = [input.value];
+      console.log("working");
+    } else data[input.name] = input.value;
+    this.setState({ data });
+  };
+  handleToggle = () => {
+    const dialog = { ...this.state.dialog };
+
+    dialog.visible === "hidden"
+      ? (dialog.visible = "visible")
+      : (dialog.visible = "hidden");
+    this.setState({ dialog });
+    console.log(dialog.visible);
+  };
+
+  renderDialog = () => {
+    return (
+      <Dialog
+        visible={this.state.dialog.visible}
+        data={this.state.data}
+        onClick={this.handleToggle}
+      />
+    );
+  };
+
+
   renderInput = (name, label, placeholder, type = "text") => {
     const { data, errors } = this.state;
+    
+    // console.log("*********",  data )
     {
       data.name &&
       data.phone &&
@@ -92,7 +126,7 @@ class Form extends React.Component {
       data.reactionInfo &&
       data.dataOccur &&
       data.timeOccur
-        ?  console.log('1') //this.setState({disableBtn: false})
+        ?  this.setState({disableBtn: false})
         :  console.log('0')
     }
   
