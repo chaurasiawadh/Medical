@@ -2,7 +2,7 @@ import React from "react";
 
 const Input = props => {
   const { value,id, onChange, name, label, autoFocus, error, type, placeholder, err } = props;
-  console.log('value', value)
+  
   return (
     <div className="form-group">
       <label htmlFor={name} style={{fontSize:20}}>{label}</label>

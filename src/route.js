@@ -1,8 +1,7 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import Home from "./screen/Home";
 import Report from "./screen/report";
-// import Report from "./screen/reports/reports";
 import NavBoot from "./component/main/navBoot";
 import complaintShow from "./screen/complaint/complaintShow";
 import firebase from "firebase/app";
